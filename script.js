@@ -78,25 +78,21 @@ function playRound() {
 }
 
 
-// 1  
-playRound();
-// 2
-playRound()
-// 3
-playRound()
-// 4
-playRound()
-// 5
-playRound()
+window.onload = function() {
+    // Play 5 rounds
+    playRound();
+    playRound();
+    playRound();
+    playRound();
+    playRound();
 
-
-
-
-if (computerScore > HumanScore) {
-    console.log("You have LOST the game!");
-    console.log("your scores:" + HumanScore + " Computer's scores" + computerScore);
-} else {
-    console.log("You have WON the game!");
-    console.log("your scores:" + HumanScore + " Computer's scores" + computerScore);
-}
+    // Display results
+    if (computerScore > HumanScore) {
+        console.log("You have LOST the game!");
+        console.log("your scores: " + HumanScore + " Computer's scores: " + computerScore);
+    } else {
+        console.log("You have WON the game!");
+        console.log("your scores: " + HumanScore + " Computer's scores: " + computerScore);
+    }
+};
 
